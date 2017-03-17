@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/WizardRMenu.Master" AutoEventWireup="true" CodeBehind="RightMaster.master.cs" Inherits="FireFight.MasterPages.RightMaster" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContentPlaceHolder" runat="server">
+    <asp:ContentPlaceHolder runat="server" ID="HeadContentPlaceHolder" >
+
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content runat="server" ID="contentSideMenu" ContentPlaceHolderID="SideMenu">
+    <div class="sidebar-nav" style="position: fixed;font-family:'mitrabold',Tahoma,arial,sans-serif;font-family:'mitrabold',Tahoma,arial,sans-serif;">
+        <ul>
+            <li><a href="/index.aspx" class="nav-header"><i class="fa fa-fw fa-dashboard">
+            </i>خرید کارت شرکت در آزمون</a></li>
+
+            <li><a href="/index.aspx" class="nav-header"><i class="fa fa-fw fa-dashboard">
+            </i>ورود</a></li>
+
+            <li><a href="/index.aspx" class="nav-header"><i class="fa fa-fw fa-dashboard">
+            </i>ویرایش اطلاعات</a></li>           
+
+            <li><a href="/index.aspx" class="nav-header"><i class="fa fa-fw fa-dashboard">
+            </i>پرینت تمامی مشخصات</a></li>  
+
+            <li><a href="/index.aspx" class="nav-header"><i class="fa fa-fw fa-dashboard">
+            </i>پرینت کارت ورود به جلسه</a></li>  
+
+</ul>>
+                    </div>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:ContentPlaceHolder runat="server" ID="ContentPlaceHolder1" >
+
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
+    <asp:ContentPlaceHolder runat="server" ID="MainContentPlaceHolder" >
+
+    </asp:ContentPlaceHolder>
+</asp:Content>

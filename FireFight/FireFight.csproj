@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6E2A4435-AEF0-4A2E-BB96-5AF0E8BD560A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FireFight</RootNamespace>
+    <AssemblyName>FireFight</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Theme1\Images\arm2.png" />
+    <Content Include="Controls\CtlPersonalAccept.ascx" />
+    <Content Include="Controls\CtlQomOrNot.ascx" />
+    <Content Include="Controls\CtlUser.ascx" />
+    <Content Include="ErrorPage.aspx" />
+    <Content Include="LoginGetCard.aspx" />
+    <Content Include="loginUser.aspx" />
+    <Content Include="LogOut.aspx" />
+    <Content Include="Manage\AllUser.aspx" />
+    <Content Include="Manage\EpayList.aspx" />
+    <Content Include="Manage\RegList.aspx" />
+    <Content Include="MasterPages\WizardRMenu.Master" />
+    <Content Include="MasterPages\RightMaster.master" />
+    <Content Include="Manage\Web.config" />
+    <Content Include="Manage\ManageMasterPage1.master" />
+    <None Include="Properties\PublishProfiles\firefight.pubxml" />
+    <Content Include="News.aspx" />
+    <Content Include="Public\EnterExamCard.aspx" />
+    <Content Include="Public\Karname.aspx" />
+    <Content Include="Public\Protest.aspx" />
+    <Content Include="Public\SecondCard.aspx" />
+    <Content Include="Upload\Web.config" />
+    <None Include="Web References\com.samanepay.acquirer\referencepayment.wsdl" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AfterPurches.aspx" />
+    <Content Include="App_Themes\Theme1\Images\next.png" />
+    <Content Include="App_Themes\Theme1\Images\pre.png" />
+    <Content Include="Controls\CtlDatePicker.ascx" />
+    <Content Include="Controls\CtlEpayOrder.ascx" />
+    <Content Include="EditLogin.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Index.aspx" />
+    <Content Include="LoginMain.aspx" />
+    <Content Include="Order.aspx" />
+    <Content Include="Public\AttachDoc.aspx" />
+    <Content Include="Public\FirstCard.aspx" />
+    <Content Include="Public\FirstInfo.aspx" />
+    <Content Include="Public\Print.aspx" />
+    <Content Include="Public\SecondInfo.aspx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ServiceReference1\referencepayment.disco" />
+    <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference1\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web References\com.samanepay.acquirer\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <None Include="Service References\ServiceReference1\referencepayment.wsdl" />
+    <None Include="Web References\com.samanepay.acquirer\referencepayment.disco" />
+    <Content Include="Web References\TerraficSms\MessagesBL.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\TerraficSms\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <None Include="Web References\TerraficSms\Send.disco" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Web References\TerraficSms\Send.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AfterPurches.aspx.cs">
+      <DependentUpon>AfterPurches.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AfterPurches.aspx.designer.cs">
+      <DependentUpon>AfterPurches.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CtlDatePicker.ascx.cs">
+      <DependentUpon>CtlDatePicker.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CtlDatePicker.ascx.designer.cs">
+      <DependentUpon>CtlDatePicker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CtlEpayOrder.ascx.cs">
+      <DependentUpon>CtlEpayOrder.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CtlEpayOrder.ascx.designer.cs">
+      <DependentUpon>CtlEpayOrder.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CtlPersonalAccept.ascx.cs">
+      <DependentUpon>CtlPersonalAccept.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CtlPersonalAccept.ascx.designer.cs">
+      <DependentUpon>CtlPersonalAccept.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CtlQomOrNot.ascx.cs">
+      <DependentUpon>CtlQomOrNot.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CtlQomOrNot.ascx.designer.cs">
+      <DependentUpon>CtlQomOrNot.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CtlUser.ascx.cs">
+      <DependentUpon>CtlUser.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CtlUser.ascx.designer.cs">
+      <DependentUpon>CtlUser.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="EditLogin.aspx.cs">
+      <DependentUpon>EditLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditLogin.aspx.designer.cs">
+      <DependentUpon>EditLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginGetCard.aspx.cs">
+      <DependentUpon>LoginGetCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginGetCard.aspx.designer.cs">
+      <DependentUpon>LoginGetCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginMain.aspx.cs">
+      <DependentUpon>LoginMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginMain.aspx.designer.cs">
+      <DependentUpon>LoginMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginUser.aspx.cs">
+      <DependentUpon>loginUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginUser.aspx.designer.cs">
+      <DependentUpon>loginUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\AllUser.aspx.cs">
+      <DependentUpon>AllUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\AllUser.aspx.designer.cs">
+      <DependentUpon>AllUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\EpayList.aspx.cs">
+      <DependentUpon>EpayList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\EpayList.aspx.designer.cs">
+      <DependentUpon>EpayList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\ManageMasterPage1.master.cs">
+      <DependentUpon>ManageMasterPage1.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\ManageMasterPage1.master.designer.cs">
+      <DependentUpon>ManageMasterPage1.master</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\RegList.aspx.cs">
+      <DependentUpon>RegList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\RegList.aspx.designer.cs">
+      <DependentUpon>RegList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\RightMaster.master.cs">
+      <DependentUpon>RightMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\RightMaster.master.designer.cs">
+      <DependentUpon>RightMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\WizardRMenu.Master.cs">
+      <DependentUpon>WizardRMenu.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\WizardRMenu.Master.designer.cs">
+      <DependentUpon>WizardRMenu.Master</DependentUpon>
+    </Compile>
+    <Compile Include="News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="PublicFN.cs" />
+    <Compile Include="Public\AttachDoc.aspx.cs">
+      <DependentUpon>AttachDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\AttachDoc.aspx.designer.cs">
+      <DependentUpon>AttachDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\EnterExamCard.aspx.cs">
+      <DependentUpon>EnterExamCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\EnterExamCard.aspx.designer.cs">
+      <DependentUpon>EnterExamCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\FirstCard.aspx.cs">
+      <DependentUpon>FirstCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\FirstCard.aspx.designer.cs">
+      <DependentUpon>FirstCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\FirstInfo.aspx.cs">
+      <DependentUpon>FirstInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\FirstInfo.aspx.designer.cs">
+      <DependentUpon>FirstInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\Karname.aspx.cs">
+      <DependentUpon>Karname.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\Karname.aspx.designer.cs">
+      <DependentUpon>Karname.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\Print.aspx.cs">
+      <DependentUpon>Print.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\Print.aspx.designer.cs">
+      <DependentUpon>Print.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\Protest.aspx.cs">
+      <DependentUpon>Protest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\Protest.aspx.designer.cs">
+      <DependentUpon>Protest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\SecondCard.aspx.cs">
+      <DependentUpon>SecondCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\SecondCard.aspx.designer.cs">
+      <DependentUpon>SecondCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\SecondInfo.aspx.cs">
+      <DependentUpon>SecondInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\SecondInfo.aspx.designer.cs">
+      <DependentUpon>SecondInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\com.samanepay.acquirer\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\TerraficSms\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="MasterPages\assets\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FireFightBLL\FireFightBLL.csproj">
+      <Project>{29400426-c380-40ec-8db0-9f9c38d86650}</Project>
+      <Name>FireFightBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FireFightCL\FireFightCL.csproj">
+      <Project>{172f6545-ffa4-4f04-941a-2a07099bd5a4}</Project>
+      <Name>FireFightCL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FireFightDAL\FireFightDAL.csproj">
+      <Project>{2c746dbc-9fd6-40ae-b5c2-72ab7e7e0a3d}</Project>
+      <Name>FireFightDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://87.107.121.54/post/Send.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\TerraficSms\</RelPath>
+      <UpdateFromURL>http://87.107.121.54/post/Send.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>FireFight_TerraficSms_Send</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://acquirer.samanepay.com/payments/referencepayment.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\com.samanepay.acquirer\</RelPath>
+      <UpdateFromURL>https://acquirer.samanepay.com/payments/referencepayment.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>FireFight_com_samanepay_acquirer_PaymentIFBinding</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>29939</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:29939/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

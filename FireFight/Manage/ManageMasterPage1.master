@@ -1,0 +1,15 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/WizardRMenu.Master" AutoEventWireup="true" CodeBehind="ManageMasterPage1.master.cs" Inherits="FireFight.Manage.ManageMasterPage1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContentPlaceHolder" runat="server">
+    <asp:ContentPlaceHolder runat="server" ID="ContentPlaceHolderhead">
+
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
+    <div  >
+    <asp:ContentPlaceHolder runat="server" ID="MainContentPlaceHolder1">
+
+    </asp:ContentPlaceHolder>
+        </div>
+</asp:Content>

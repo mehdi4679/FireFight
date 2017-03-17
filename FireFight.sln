@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireFight", "FireFight\FireFight.csproj", "{6E2A4435-AEF0-4A2E-BB96-5AF0E8BD560A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireFightCL", "FireFightCL\FireFightCL.csproj", "{172F6545-FFA4-4F04-941A-2A07099BD5A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireFightDAL", "FireFightDAL\FireFightDAL.csproj", "{2C746DBC-9FD6-40AE-B5C2-72AB7E7E0A3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireFightBLL", "FireFightBLL\FireFightBLL.csproj", "{29400426-C380-40EC-8DB0-9F9C38D86650}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.200.78:8080/tfs/estekhdam
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FireFight\\FireFight.csproj
+		SccProjectName1 = FireFight
+		SccLocalPath1 = FireFight
+		SccProjectUniqueName2 = FireFightBLL\\FireFightBLL.csproj
+		SccProjectName2 = FireFightBLL
+		SccLocalPath2 = FireFightBLL
+		SccProjectUniqueName3 = FireFightCL\\FireFightCL.csproj
+		SccProjectName3 = FireFightCL
+		SccLocalPath3 = FireFightCL
+		SccProjectUniqueName4 = FireFightDAL\\FireFightDAL.csproj
+		SccProjectName4 = FireFightDAL
+		SccLocalPath4 = FireFightDAL
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E2A4435-AEF0-4A2E-BB96-5AF0E8BD560A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E2A4435-AEF0-4A2E-BB96-5AF0E8BD560A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E2A4435-AEF0-4A2E-BB96-5AF0E8BD560A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E2A4435-AEF0-4A2E-BB96-5AF0E8BD560A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{172F6545-FFA4-4F04-941A-2A07099BD5A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{172F6545-FFA4-4F04-941A-2A07099BD5A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{172F6545-FFA4-4F04-941A-2A07099BD5A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{172F6545-FFA4-4F04-941A-2A07099BD5A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C746DBC-9FD6-40AE-B5C2-72AB7E7E0A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C746DBC-9FD6-40AE-B5C2-72AB7E7E0A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C746DBC-9FD6-40AE-B5C2-72AB7E7E0A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C746DBC-9FD6-40AE-B5C2-72AB7E7E0A3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29400426-C380-40EC-8DB0-9F9C38D86650}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29400426-C380-40EC-8DB0-9F9C38D86650}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29400426-C380-40EC-8DB0-9F9C38D86650}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29400426-C380-40EC-8DB0-9F9C38D86650}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
